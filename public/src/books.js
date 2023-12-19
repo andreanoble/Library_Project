@@ -5,9 +5,9 @@ function findAuthorById(authors, id) {
 - An integer ID of a single author object.
 It returns the author object that has the matching ID.
 */
-  for (let i = 0; i < authors.length; i++){
-    if (authors[i].id === id){
-      return authors[i];
+  for (let index = 0; index < authors.length; index++){
+    if (authors[index].id === id){
+      return authors[index];
     }
   }
 }

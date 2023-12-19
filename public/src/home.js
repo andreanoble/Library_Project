@@ -27,10 +27,10 @@ It returns a _number_ that represents the number of books _that are currently ch
 */
 //return books.forEach((book) => (book.borrows.filter( a => a.returned === false)));
   let count = 0;
-  for(let i = 0; i < books.length; i++){
-    let book = books[i];
-    for(let j = 0; j < book.borrows.length; j++){
-      if(book.borrows[j].returned === false){
+  for(let index = 0; index < books.length; index++){
+    let book = books[index];
+    for(let indexBorrows = 0; indexBorrows < book.borrows.length; indexBorrows++){
+      if(book.borrows[indexBorrows].returned === false){
         count++;
       }
     }
